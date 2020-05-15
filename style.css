@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    font-family: 'Orbitron', sans-serif;
+}
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-areas: "Header" "Main" "Footer";
+}
+header{ 
+    grid-area: Header;
+    width: 100%;
+    display: flex;
+}
+header .logo{
+    color: mintcream;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+header nav{
+    width: 85%;
+    margin-right: 10px;
+}
+    
+header nav ul{
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-left: 5px;
+}
+header nav ul li a{
+    color: mintcream;
+    line-height: 50px;
+    font-size: 14px;
+    text-decoration: none;
+}
+#projects{
+    display: none;
+}
+
+.menuTog{
+    color:rgba(6, 187, 247, 0.842);
+    float: right;
+    line-height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.main { 
+    grid-area: Main; 
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+    color: mintcream;
+    font-size: 60px;
+    margin-left: 25vh;
+    margin-top: 5%;
+}
+#a, #d1, #d2, #y {
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(6, 187, 247, 0.842);
+    font-size: 45px;
+}
+/* h1{
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+} */
+#a:hover{
+    color: teal;
+}
+#d1:hover{
+    color: mediumslateblue;
+}
+#d2:hover{
+    color: indigo;
+}
+#y:hover{
+    color: midnightblue;
+}
+.footer { 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    grid-area: Footer; 
+    background-color: rgba(6, 187, 247, 0.842);
+    text-align: center;
+}
+#themeChange{
+    padding: 1%;
+}
+
