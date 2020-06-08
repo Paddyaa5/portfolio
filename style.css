@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Raleway', sans-serif;
 }
 body{
     background: black;
@@ -39,7 +42,7 @@ nav{
     width: 45%;
     margin-right: 5%;
 }
-.links li{
+.links li a{
     list-style: none;
     text-decoration: none;
     color: mintcream;
@@ -63,15 +66,17 @@ nav{
     grid-area: Main; 
 }
 h1{
+    font-family: 'Orbitron', sans-serif;
     color: mintcream;
-    font-size: 60px;
+    font-size: 8vw;
     margin-left: 10%;
     margin-top: 5%;
-    letter-spacing: 18px;
+    letter-spacing: 30px;
 }
 #a, #d1, #d2, #y {
+    font-family: 'Orbitron', sans-serif;
     color: rgba(6, 187, 247, 0.842);
-    font-size: 45px;
+    font-size: 5vh;
 }
 #a:hover{
     color: teal;
@@ -91,10 +96,14 @@ h1{
     grid-area: Footer; 
     background-color: rgba(6, 187, 247, 0.842);
     text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
 }
 #themeChange{
     padding: 1%;
 }
+
+/* For project.html page */
 
 #projects{
     margin: 10%;
@@ -120,24 +129,16 @@ h1{
         margin-right: 5%;
     }
     h1{
-        font-size: 50px;
         margin-left: 12%;
         margin-top: 10%;
         letter-spacing: 14px;
     }
-    #a, #d1, #d2, #y {
-        font-size: 35px;
-    }
 }
 @media screen and (max-width: 768px){
     h1{
-        font-size: 45px;
         margin-left: 8%;
         margin-top: 15%;
         letter-spacing: 10px;
-    }
-    #a, #d1, #d2, #y {
-        font-size: 32px;
     }
     body{
         overflow-x: hidden;
