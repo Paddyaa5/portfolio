@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 *{
@@ -31,7 +30,7 @@ nav{
     margin-left: 2%;
 }
 .logo{
-    color: mintcream;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 18px;
@@ -95,18 +94,24 @@ h1{
     font-size: 12px;
     grid-area: Footer; 
     background-color: rgba(6, 187, 247, 0.842);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
+    padding: 0px 40vw;
+}
+.footer a{
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 36px;
 }
-#themeChange{
-    padding: 1%;
-}
+
+
+
 
 /* For project.html page */
 
 #projects{
-    margin: 10%;
+    margin-top:8%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -116,7 +121,55 @@ h1{
     color: mintcream;
     text-align: center;
 }
+.pro i{
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+.pro img{
+    width: 20vw;
+    margin-bottom: 20px;
+}
+.footer { 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    grid-area: Footer; 
+    background-color: rgba(6, 187, 247, 0.842);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0px 40vw;
+}
+.footer a{
+    color: whitesmoke;
+    font-size: 36px;
+}
 
+
+/* For contact.html page */
+
+input{
+    background: none;
+    color: mintcream;
+    outline: none;
+    border: none;
+    width: 35vw;
+    height: auto;
+    margin-top: 4vh;
+}
+#contactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-family: 'Orbitron', sans-serif;
+    color: mintcream;
+    font-size: 7vw;
+    margin-left: 10%;
+    margin-top: 5%;
+    letter-spacing: 30px;
+}
 
 
 /* For screen sizing */
@@ -132,6 +185,10 @@ h1{
         margin-left: 12%;
         margin-top: 10%;
         letter-spacing: 14px;
+    }
+    .pro i{
+        font-size: 90px;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 768px){
@@ -162,6 +219,10 @@ h1{
     }
     .links li{
         opacity: 0;
+    }
+    .pro i{
+        font-size: 60px;
+        margin-bottom: 20px;
     }
 }
 
